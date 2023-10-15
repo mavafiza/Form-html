@@ -1,0 +1,284 @@
+/* header/footer/submit color #0F766E */
+/* background color pagina #F8FAFC */
+/* font color resaltado #4338CA */
+/* font color #0F172A */
+/* font color signature #64748B*/
+/* backgrouns color cuadro #0D9488 */
+/* comillas color #49AEA5 */
+/* color texto #334155 */
+/* background-color: chartreuse; */
+
+/* ------------------------------ */
+/* BODY */
+
+body {
+    background-color: #F8FAFC;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.gridLayoutAcme {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    justify-content: stretch;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.caja1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column: 1/6;
+    grid-row: 1/2;  
+    width: 50;
+    height: 75PX;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #0F766E;
+    padding: 0 10%;
+}
+.caja1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 25px;
+}
+.logoMini {
+    width: 40px;
+    height: auto;
+}
+.displayLogo{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+
+}
+
+/* SECTION 1 */
+.caja2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-column: 1/6;
+    grid-row: 2/3;   
+    padding-top: 2%;
+    gap: 40px;
+}
+.imgSection1 {
+    width: 30%;
+    height: auto;
+}
+.textSection1 {
+    line-height: 55px;
+    width: 25%;
+}
+.textSection1 h1 {
+    font-size: 57px;
+}
+.textSection1 p {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+/* OUR ROCKETS SECTION 2 */
+
+
+.caja3 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/6;
+    grid-row: 3/4;   
+    align-items: center;
+}
+.caja3 h2 {
+    border-top: #e8ebeb solid;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 50px;
+}
+.ourRocketsSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+.rockets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 25px;
+    width: 20%;
+    padding: 2% 0;
+    justify-content: space-around;
+}
+.rockets p {
+    margin: 0;
+    font-size: 30px;
+}
+.rockets img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/* TESTIMONIALS SECTION 3 */
+
+.caja4 {
+    grid-column: 1/6;
+    grid-row: 4/5;  
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 0 10%;
+}
+
+.gridTestimonials {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.caja4 h2 {
+    border-top: #e8ebeb solid;
+    padding: 70px;
+    font-size: 50px;
+    text-align: center;}
+.caja4 p {
+    text-align: right;
+}
+.signature {
+    text-align: right;
+    justify-self: end;
+    color: #64748B;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.displayTestimonials {
+    display: flex;
+    flex-direction: column;
+}
+.colorBox {
+    display: flex;
+    flex-direction: row;
+    background-color: #0D9488;
+    color: white;
+    border-radius: 25px;
+    width: 80%;
+    font-size: 35px;
+    padding: 50px 125px 50px 50px;
+    
+}
+
+
+/* CONTACT US SECTION 4 */
+
+.caja5 {
+    grid-column: 1/6;
+    grid-row: 5/6;  
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0 a;
+}
+.caja5 h2 {
+    font-size: 50px;
+    text-align: center;
+}
+.widthContactUs {
+    padding-left: 77px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10%;
+    font-size: 35px;
+}
+::placeholder {
+    font-size: 35px;
+    color: #cfd2d2;
+}
+.caja5 button {
+    border-radius: 12px;
+    width: 185px;
+    height: 60px;
+    background-color: #0F766E;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {
+    background-color: #114b4b;
+    background-color: rgb(23, 108, 79);
+}
+button:active {
+    background-color: #114b4b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+textarea {
+    width: 80%;
+    border-radius: 12px;
+    border: 2px solid rgb(127, 124, 124);
+    padding: 20px 0 5px 20px;
+    margin-bottom: 20px;
+}
+label {
+    padding: 15px;
+
+}
+input {
+    border-radius: 12px;
+    width: 80%;
+    height: 50px;
+    padding: 20px 0 5px 20px;
+}
+
+/* FOOTER SECTION 5 */
+
+.caja6 {
+    width: 100%;
+    height: 140px;
+    grid-column: 1/6;
+    grid-row: 6/7;  
+    display: grid;
+    grid-template-columns: 20% 30% 15% 15% 20%;
+    background-color: #0F766E;
+    color: white;
+    font-size: 25px;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+.box1 {
+    grid-column: 1/2;
+}
+.box2 {
+    grid-column: 2/3;
+
+}
+.box3 {
+    grid-column: 3/4;
+    line-height: 40px;
+}
+.box4 {
+    grid-column: 4/5;
+    line-height: 40px;
+}
+
+.box5 {
+    grid-column: 5/6;
+
+}
+
